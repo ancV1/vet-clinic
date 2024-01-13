@@ -3,7 +3,6 @@ package main.java.com.magicvet.service;
 import main.java.com.magicvet.Main;
 import main.java.com.magicvet.model.Client;
 
-import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
