@@ -18,15 +18,16 @@ public class ApplicationRunner {
             if(client != null) {
                 System.out.print("Do you want add a new pet now?(yes / no):");
                 String answer = Main.SCANNER.nextLine();
-                if(answer.equals("yes")){
+                if(answer.equals("yes")) {
                     System.out.println("Adding a new pet.");
 
                     Pet pet = petService.registerNewPet();
-                    client.setPet(pet);
+                    if (pet != null){
+                        client.setPet(pet);
 
-                    pet.setOwnerName(client.getFirstName() + " " + client.getLastName());
-                    System.out.println("Pat has been added.");
-
+                        pet.setOwnerName(client.getFirstName() + " " + client.getLastName());
+                        System.out.println("Pat has been added.");
+                    }
                     System.out.println(client);
                 }
             }

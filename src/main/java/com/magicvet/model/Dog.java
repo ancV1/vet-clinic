@@ -18,13 +18,13 @@ public class Dog extends Pet{
     @Override
     public String toString() {
         return "Pet {"
-                + "\n\t\t type = " + getType()
+                + "type = " + getType()
                 + ", sex = " + getSex()
                 + ", age = " + getAge()
                 + ", name = " + getName()
                 + ", size = " + size
                 + ", ownerName = " + getOwnerName()
-                + "\n\t}";
+                + "}";
     }
 
     public String getSize() {
